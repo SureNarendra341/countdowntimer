@@ -1,0 +1,89 @@
+body{
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form-area,.counter,.complete{
+    padding:20px;
+    border-radius:5px;
+    background-color: white;
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+   
+}
+
+.form-area input{
+    display: block;
+    margin: 15px;
+    padding: 10px;
+    margin-left:0px;
+    margin-right: 0px;
+    width: 300px;;
+}
+
+.form-area{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+button{
+    background-color: aqua;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.counter h1{
+    text-align: center;
+}
+
+li{
+    display:inline-block ;
+    font-size: 30px;
+    list-style-type: none;
+    padding:10px;
+    text-transform:uppercase;
+    color:black ;
+}
+li span{
+    display:block;
+    font-size:80px;
+    text-align: center;
+}
+
+.complete-title{
+    animation: complete 4s infinite;
+    text-align: center;
+}
+
+@keyframes complete{
+    0%{
+        color: red;
+    }
+    25%{
+        color: yellow;
+        transform: rotate(5deg);
+    }
+    50%{
+       color: green;
+       transform: scale(1.2); 
+    }
+    75%{
+        color: blue;
+        transform: rotate(-5deg);
+    }
+    100%{
+        color: red;
+        transform: rotate(0deg);
+    }
+}
